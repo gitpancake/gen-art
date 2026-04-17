@@ -1,6 +1,6 @@
 # gen-art
 
-An archived monorepo of personal **generative-art experiments** — mostly built around processing Space Invader mosaic photography, plus a couple of standalone fxhash pieces and web-art clones.
+An archived monorepo of personal **generative-art experiments** — mostly built around processing Space Invader mosaic photography, plus a few standalone fxhash pieces, onchain NFT projects, and web-art clones.
 
 This is a **frozen snapshot** of the work, kept for reference. Each subdirectory is an independent experiment; they don't share dependencies or build pipelines.
 
@@ -22,13 +22,14 @@ These four pieces form a loose pipeline for converting photos of Space Invader s
 | Subdir | Stack | What it is |
 |---|---|---|
 | [`painting-splotches/`](./painting-splotches) | p5.js + fxhash SDK | fx(hash) generative-art piece — layered gaussian paint splotches with configurable patch size, layer count, and palette features |
+| [`christmas-cards-2025/`](./christmas-cards-2025) | Solidity 0.8.20 + Hardhat + p5.js | Onchain ERC-721 NFT collection for Christmas Cards 2025 — fully on-chain HTML rendering variant + simpler `tokenURI`-based variant, Base-targeted (100 max supply) |
 | [`web-art/`](./web-art) | HTML + ASCII | A local archive of `papertoilet.com` by Rafael Rozendaal (2006) — a piece of web-native art where you endlessly scroll toilet paper |
 
 ## Why this exists
 
 Each subdirectory was originally a separate folder on my filesystem (none of them ever had a git remote except [`flow`](https://github.com/gitpancake/flow), which lives separately as its own archived repo). Consolidated here so the work is preserved in one place.
 
-Each subdirectory keeps its original source files (scripts, sketches, assets) intact. Large build artifacts (`node_modules/`, `venv/`, `__pycache__/`, `.next/`) have been stripped — reinstall with the usual tools if you want to run anything.
+Each subdirectory keeps its original source files (scripts, sketches, assets) intact. Large build artifacts (`node_modules/`, `venv/`, `__pycache__/`, `.next/`, `artifacts/`, `cache/`) have been stripped — reinstall with the usual tools if you want to run anything.
 
 ## Related
 
